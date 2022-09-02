@@ -1,0 +1,166 @@
+.approach {
+  min-height: 1027px;
+  background: $background-eternity;
+
+  &__h2 {
+
+    width: 880px;
+    height: 63px;
+
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 63px;
+    color: $ambience-white;
+  }
+
+  &__btn {
+    position: absolute;
+    margin-left: 1230px;
+    width: 208px;
+    height: 56px;
+    text-align: center;
+    border: 2px solid $ambience-white;
+    background-color: $background-eternity;
+    color: $ambience-white;
+    &:hover {
+      border-color: $holland-red;
+      color: $holland-red;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__head {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+
+  }
+
+  &__column {
+    &:nth-child(even) {
+      margin-left: 122px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 249px;
+        transform: translate(-60px, 40px);
+        background-color: $balsamic-reduction
+          /* balsamic-reduction */
+
+
+          // transform: rotate(-180deg);
+      }
+    }
+    
+
+    &_header {
+      position: relative;
+      display: inline;
+
+      margin-top: 40px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      text-transform: uppercase;
+      color: $ambience-white;
+
+    }
+    &_header::after {
+      content: attr(data-progress);
+      position: absolute;
+      top: -22px;
+      left: 0;
+      font-size: 14px;
+      // background: #ccc;
+      width: 20px;
+    }
+    &_header::before {
+      content: '';
+      position: absolute;
+      top: -32px;
+      left: 30px;
+      font-size: 14px;
+      background: $holland-red;
+      height: 14px;
+      right: 0;
+    }
+
+
+    &_descr {
+      margin-top: 30px;
+      margin-bottom: 80px;
+      width: 659px;
+      height: 60px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+
+      color: $ambience-white;
+    }
+
+    &_slash {
+
+      margin-top: 80px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+      margin-bottom: 14px;
+      text-transform: uppercase;
+      color: $industrial-revolution;
+    }
+
+
+
+    // &_progressbar-1 {
+    //   transform: translate(30px, -17px);
+    //   display: block;
+    //   width: 117px;
+    //   height: 14px;
+    //   background: $holland-red
+    // }
+
+    // &_progressbar-2 {
+    //   transform: translate(30px, -17px);
+    //   display: block;
+    //   width: 99px;
+    //   height: 14px;
+    //   background: $holland-red
+    // }
+
+    // &_progressbar-3 {
+    //   transform: translate(30px, -17px);
+    //   display: block;
+    //   width: 153px;
+    //   height: 14px;
+    //   background: $holland-red
+    // }
+
+    // &_progressbar-4 {
+    //   transform: translate(30px, -17px);
+    //   display: block;
+    //   width: 303px;
+    //   height: 14px;
+    //   background: $holland-red
+    // }
+  }
+}
+
+// .menu__hr-under {
+//   &.hidden {
+//   display: none;
+// }
+// }

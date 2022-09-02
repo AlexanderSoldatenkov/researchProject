@@ -1,0 +1,120 @@
+.services {
+  margin-top: 496px;
+  display: flex;
+  flex-direction: column;
+  min-height: 681px;
+
+  &__redsquare {
+    display: none;
+    margin: 30px auto 0 auto;
+
+    background-color: $holland-red;
+
+    width: 14px;
+    height: 14px;
+
+  }
+
+  &__head {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__columns {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__column {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      margin-left: 120px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 120px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 2px;
+      height: 438px;
+      transform: translate(-40px, -40px);
+      background-color: $titanium-white;
+    }
+
+    img {
+      width: 119px;
+      height: 119px;
+      // width: 86px;
+      // height: 86px;
+    }
+
+    &_head {
+      margin-top: 40px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 19px;
+
+
+      text-transform: uppercase;
+      color: $background-eternity;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+
+        transform: translate(0px, 29px);
+        background-color: $holland-red;
+        width: 14px;
+        height: 14px;
+
+      }
+    }
+
+    &_descr {
+      margin-top: 123px;
+      width: 360px;
+      height: 60px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: $background-eternity;
+    }
+
+  }
+
+  &__h2 {
+    width: 570px;
+    height: 63px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 63px;
+    color: $background-eternity;
+  }
+
+  &__btn {
+    position: absolute;
+    margin-left: 1230px;
+    width: 208px;
+    height: 56px;
+    text-align: center;
+    border: 2px solid $background-eternity;
+    background-color: #fff;
+
+    &:hover {
+      border-color: $holland-red;
+      color: $holland-red;
+    }
+  }
+}

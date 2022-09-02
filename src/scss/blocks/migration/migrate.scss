@@ -1,0 +1,234 @@
+.migration {
+  //   height: 2462;
+
+  &__grid {
+    margin-top: 60px;
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 659px 659px;
+    grid-template-rows: minmax(620px, auto) minmax(620px, auto);
+    row-gap: 78;
+    column-gap: 122px;
+
+
+    &_element {
+      &:nth-child(1) {
+        margin-bottom: 78px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 78px;
+      }
+
+      img {
+        object-fit: contain;
+        width: 659px;
+        height: 474px;
+      }
+
+      &-header {
+        display: flex;
+        gap: 10px;
+
+        div {
+          flex-grow: 1;
+          background: $holland-red;
+          margin: 2px 0;
+
+        }
+
+        margin-top: 36px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+
+        text-transform: uppercase;
+        color: $industrial-revolution;
+      }
+
+      &-descr {
+        width: 659px;
+        margin-top: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: $background-eternity;
+      }
+
+      &-progresbar-1 {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+
+          transform: translate(239px, -15px);
+          background-color: $holland-red;
+          width: 420px;
+          height: 14px;
+
+        }
+      }
+
+      &-progresbar-2 {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+
+          transform: translate(180px, -15px);
+          background-color: $holland-red;
+          width: 481px;
+          height: 14px;
+
+        }
+      }
+
+      &-progresbar-3 {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+
+          transform: translate(126px, -16px);
+          background-color: $holland-red;
+          width: 534px;
+          height: 14px;
+
+        }
+      }
+
+      &-progresbar-4 {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+
+          transform: translate(335px, -16px);
+          background-color: $holland-red;
+          width: 324px;
+          height: 14px;
+
+        }
+      }
+    }
+
+
+  }
+
+  &__head {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+
+    &_second {
+      margin-top: 120px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+  }
+
+  &__h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 63px;
+    color: $background-eternity;
+  }
+
+  &__btn {
+    position: absolute;
+    margin-left: 1230px;
+    width: 208px;
+    height: 56px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    // line-height: 22px;
+    text-align: center;
+    color: $background-eternity;
+
+    border: 2px solid $background-eternity;
+  }
+
+  &__blackline {
+ 
+    width: 100%;
+    // width: 1659px;
+    height: 14px;
+    // left: 240px;
+    margin-top: 120px;
+    background: $background-eternity;
+  }
+
+  &__columns {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 160px;
+  }
+
+  &__column {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      margin-left: 102px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 102px;
+    }
+
+    &:nth-child(4) {
+      margin-left: 102px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 2px;
+      height: 316px;
+      transform: translate(-40px, -40px);
+      background-color: $titanium-white;
+    }
+
+    img {
+      width: 86px;
+      height: 86px;
+    }
+
+    &_head {
+      margin-top: 40px;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 19px;
+
+
+      text-transform: uppercase;
+      color: $background-eternity;
+
+
+    }
+
+    &_descr {
+      margin-top: 60px;
+      width: 246px;
+      height: 90px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+
+      color: $background-eternity;
+    }
+
+  }
+}

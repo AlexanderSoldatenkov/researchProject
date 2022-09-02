@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import './variables/variables';
+@import './base.scss';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/_bootstrap-grid.min';
+
+@import './blocks/header/header.scss';
+@import './blocks/first_screen/first_screen.scss';
+@import './blocks/services/services.scss';
+@import './blocks/approach/approach.scss';
+@import './blocks/migration/migrate.scss';
+@import './blocks/footer/footer.scss';
+@import './blocks/costs/costs.scss';
+@import './media.scss';

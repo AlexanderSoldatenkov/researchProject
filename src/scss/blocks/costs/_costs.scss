@@ -1,0 +1,123 @@
+.costs {
+  height: 886px;
+  background: $background-eternity;
+
+  &__reduction {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+
+      transform: translate(-30px, -30px);
+      background-color: $industrial-revolution;
+      width: 6px;
+      height: 150px;
+
+    }
+  }
+
+  &__columns {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    &_item {
+
+      //   margin-top: 0;
+      &:first-child {
+        margin-top: 120px;
+      }
+
+      &-hr {
+        width: 720px;
+        height: 2px;
+        background: $balsamic-reduction;
+        border: none;
+
+
+
+      }
+
+      &-name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 30px 0 30px 30px;
+        color: $ambience-white;
+
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+
+          transform: translate(-30px, -30px);
+          background-color: $industrial-revolution;
+          width: 6px;
+          height: 90px;
+
+        }
+
+        // &::after {
+        //     content: "//";
+        //     display: block;
+        //     position: absolute;
+        //     font-style: normal;
+        //     font-weight: 400;
+        //     font-size: 18px;
+        //     line-height: 30px;
+        //     transform: translate(2px, -32px);
+        //     color: $balsamic-reduction;
+
+
+        //   }
+      }
+    }
+
+    // display: flex;
+    // flex-direction: column;
+
+
+
+
+    &_h2 {
+      margin-top: 120px;
+      width: 564px;
+      height: 126px;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 46px;
+      line-height: 63px;
+      color: $ambience-white;
+    }
+
+    &_btn {
+      margin-top: 60px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: $ambience-white;
+      width: 304px;
+      height: 56px;
+      left: 240px;
+      top: 5952px;
+      border: 2px solid $ambience-white;
+      background: $background-eternity;
+
+      &:hover {
+        border-color: $holland-red;
+        color: $holland-red;
+      }
+    }
+
+    img {
+      // position: absolute;
+      margin-top: 100px;
+      object-fit: contain;
+      width: 620px;
+      height: 520px;
+    }
+  }
+}
