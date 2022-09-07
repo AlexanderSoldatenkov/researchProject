@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import './variables/variables';
+@import './base.scss';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/_bootstrap-grid.min';
+@import '../fonts/icomoon-v1.0/style.css';
+
+@import './blocks/navbar';
+
+@import './media.scss';
